@@ -1,4 +1,4 @@
-package org.codemaster.shoppingbackend.test;
+/*package org.codemaster.shoppingbackend.test;
 
 import static org.junit.Assert.assertEquals;
 
@@ -50,7 +50,7 @@ private static AnnotationConfigApplicationContext context;
 		assertEquals(product.getName(),product.getName() );
 		
 		// reading and updating the category
-		/*product = productDAO.get(0);
+		product = productDAO.get(0);
 		
 		product.setName("Samsung Galaxy S7");
 		assertEquals("Something went wrong while updating the existing record!",
@@ -61,7 +61,7 @@ private static AnnotationConfigApplicationContext context;
 		
 		// list
 		assertEquals("Something went wrong while fetching the list of products!",
-				6,productDAO.list().size());	*/	
+				6,productDAO.list().size());		
 				
 	}
 		
@@ -93,3 +93,4 @@ private static AnnotationConfigApplicationContext context;
 		
 	} 
 }
+*/

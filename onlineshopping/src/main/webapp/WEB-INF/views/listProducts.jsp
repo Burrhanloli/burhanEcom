@@ -1,8 +1,8 @@
-<div class="row"id="er">
+<div class="row">
 
 
 
-	<div class="col-md-12" >
+	<div class="col-md-12" id="re" >
 
 
 		<div class="well">
@@ -66,7 +66,7 @@
 							<div class="col-xs-12">
 
 
-								<table id="productListTable" class="table table-hover">
+								<table id="productListTable" class="table table-hover ">
 
 
 									<thead>

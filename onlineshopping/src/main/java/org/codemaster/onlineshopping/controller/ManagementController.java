@@ -28,6 +28,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/manage")
 public class ManagementController {
+	@SuppressWarnings("unused")
 	private static final Logger logger = LoggerFactory.getLogger(ManagementController.class);
 
 	@Autowired
@@ -114,7 +115,7 @@ public class ManagementController {
 	
 		 //upload the file
 		 if(!mProduct.getFile().getOriginalFilename().equals("") ){
-			FileUtil.uploadFile(request, mProduct.getFile(), mProduct.getName()); 
+			FileUtil.uploadFile(request, mProduct.getFile(), mProduct.getCode()); 
 		 }
 		
 		return "redirect:/manage/product?success=product";

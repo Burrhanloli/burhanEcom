@@ -73,7 +73,7 @@ $(function() {
 					},
 					columns : [
 							{
-								data : 'name',
+								data : 'code',
 								bSortable : false,
 								mRender : function(data, type, row) {
 
@@ -170,7 +170,7 @@ $(function() {
 					           	{data: 'id'},
 
 
-					           	{data: 'name',
+					           	{data: 'code',
 					           	 bSortable: false,
 					           		mRender: function(data,type,row) {
 					           			return '<img src="' + window.contextRoot
@@ -412,3 +412,7 @@ $(function() {
 		}
 	});			
 });
+
+$("#search").datatable({
+	"searching":true
+})

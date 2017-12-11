@@ -58,7 +58,7 @@
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<a class="navbar-brand navbar-link"
-						href="${flowExecutionUrl}&_eventId=home">Eternal <span>Clothing
+						href="${contextRoot}">Eternal <span>Clothing
 					</span>
 					</a>
 					<button class="navbar-toggle collapsed" data-toggle="collapse"

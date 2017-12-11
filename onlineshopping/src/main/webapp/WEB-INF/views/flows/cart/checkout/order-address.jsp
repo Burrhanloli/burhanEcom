@@ -4,15 +4,14 @@
 	<div class="row">
 		<div class="col-md-4">
 			<div class="well">
-				<h3 class="text-center">Select Shipping Address</h3>
-				<hr />
+				<h1 class="text-center">Select Shipping Address</h1>
+				
 				<c:forEach items="${addresses}" var="address">
 					<div class="cols-xs-12">
 						<h3>${address.addressLineOne}</h3>
 						<h3>${address.addressLineTwo}</h3>
 						<h4>${address.city}-${address.postalCode}</h4>
 						<h4>${address.state}-${address.country}</h4>
-						<hr />
 						<div class="text-center">
 							<a
 								href="${flowExecutionUrl}&_eventId_addressSelection&shippingId=${address.id}"
@@ -24,8 +23,8 @@
 		</div>
 		<div class="col-md-8">
 			<div class="well">
-				<h3 class="text-center">New Address</h3>
-				<hr />
+				<h1 class="text-center">New Address</h1>
+				
 				<div class="panel-body">
 					<sf:form method="POST" modelAttribute="shipping"
 						class="form-horizontal" id="billingForm">

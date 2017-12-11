@@ -64,7 +64,7 @@
 			<div class="row">
 				<div class="col-sm-4" ng-repeat="product in pCtrl.mvProducts">
 					<div id="pr" class="well">
-						<img ng-src="${images}/{{product.name}}.jpg"
+						<img ng-src="${images}/{{product.code}}.jpg"
 							alt="{{product.name}}" class="landingImg">
 						<h1>{{product.name}}</h1>
 						<div class="caption">
@@ -104,7 +104,7 @@
 
 				<div class="col-sm-4" ng-repeat="product in pCtrl.mpProducts">
 					<div id="pr" class="well">
-						<img ng-src="${images}/{{product.name}}.jpg"
+						<img ng-src="${images}/{{product.code}}.jpg"
 							alt="{{product.name}}" class="landingImg">
 						<h1>{{product.name}}</h1>
 						<div class="caption">

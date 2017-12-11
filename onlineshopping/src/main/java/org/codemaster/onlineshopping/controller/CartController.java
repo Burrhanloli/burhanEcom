@@ -13,6 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/cart")
 public class CartController {
+@SuppressWarnings("unused")
 private final static Logger logger = LoggerFactory.getLogger(CartController.class);
 	
 	@Autowired
