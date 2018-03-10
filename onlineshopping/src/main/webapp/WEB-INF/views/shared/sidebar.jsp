@@ -1,11 +1,11 @@
 
-<div class="well">
+<div class="well" id="products1">
 <h1 class="text-center">Category</h1>
 
 
 
 
-<div class="list-group">
+<div class="list-group text-uppercase">
 
 
 	<c:forEach items="${categories}" var="category">

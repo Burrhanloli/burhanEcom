@@ -19,12 +19,10 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Shopping - Membership</title>
+<title>Eternal Clothing - Membership</title>
 
 <script>
-
 	window.contextRoot = '${contextRoot}'
-	
 </script>
 
 <!-- Bootstrap Core CSS -->
@@ -51,16 +49,22 @@
 </head>
 
 <body>
-	<div class="se-pre-con"></div>
-	<nav class="navbar navbar-default custom-header navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="${flowExecutionUrl}&_eventId=home">Eternal <span>Clothing </span> </a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            </div>
 
+	<div class="se-pre-con"></div>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-link" href="${contextRoot}" id="brand"><strong>Eternal</strong>
+					Clothing</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#navcol-1">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
 			</div>
-		</nav>
-		
-		
-		<!-- Page Content -->
+
+		</div>
+	</nav>
+
+	<!-- Page Content -->

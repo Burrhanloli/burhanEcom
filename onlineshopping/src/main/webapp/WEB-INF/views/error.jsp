@@ -33,59 +33,52 @@
 </head>
 
 <body>
-
-	<div class="wrapper">
-
-		<nav class="navbar navbar-default custom-header navbar-fixed-top"
-			role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<a class="navbar-brand navbar-link" href="${contextRoot}/home">Eternal
-						<span>Clothing </span>
-					</a>
-					<button class="navbar-toggle collapsed" data-toggle="collapse"
-						data-target="#navbar-collapse">
-						<span class="sr-only">Toggle navigation</span><span
-							class="icon-bar"></span><span class="icon-bar"></span><span
-							class="icon-bar"></span>
-					</button>
-				</div>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand navbar-link" href="${contextRoot}" id="brand"><strong>Eternal</strong>
+					Clothing</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#navcol-1">
+					<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+				</button>
 			</div>
-		</nav>
+
+		</div>
+	</nav>
 
 
-		<div class="row" id="rr">
-
-			<div class="col-md-12">
 
 
-				<div class="col-xs-12">
+	<div class="row">
+		<div
+			class="col-lg-10 col-lg-push-1 col-lg-pull-2 col-md-10 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-12">
+			<div class="well" id="login">
+				<div class="jumbotron">
 
-					<div class="well">
-						<div class="jumbotron">
+					<h1>${errorTitle}</h1>
 
-							<h1>${errorTitle}</h1>
+					<blockquote style="word-wrap: break-word">
 
-							<blockquote style="word-wrap: break-word">
-
-								${errorDescription}</blockquote>
-
-						</div>
-
-
-					</div>
+						${errorDescription}</blockquote>
 
 				</div>
+
 
 			</div>
 
 		</div>
 
-
-		<%@include file="./shared/footer.jsp"%>
+	</div>
 
 	</div>
+	</div>
+
+	<%@include file="./shared/footer.jsp"%>
+
+
 
 
 </body>

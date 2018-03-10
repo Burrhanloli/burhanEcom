@@ -1,22 +1,22 @@
 <%@include file="../flows-shared/header.jsp"%>
-<div class="container" id="er">
-	<div class="well">
-		<div class="row">
+<div class="row">
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div class="well" id="login">
+			<div class="row">
 
-			<div class="col-sm-6">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-				<div class="well">
-					<h1 class="text-center">Personal Details</h1>
+					<div class="well" id="login">
+						<h1 class="text-center">Personal Details</h1>
 
-					<div class="panel-body">
 						<div class="text-center">
-							<h3>
+							<h2>
 								Name : <strong>${registerModel.user.firstName}
 									${registerModel.user.lastName}</strong>
-							</h3>
-							<h4>
+							</h2>
+							<h3>
 								Email : <strong>${registerModel.user.email}</strong>
-							</h4>
+							</h3>
 							<h4>
 								Contact : <strong>${registerModel.user.contactNumber}</strong>
 							</h4>
@@ -32,51 +32,49 @@
 
 				</div>
 
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 
-			</div>
+					<div class="well" id="login">
+						<h1 class=" text-center">Billing Address</h1>
 
-			<div class="col-sm-6">
-
-
-				<div class="well">
-					<h1>Billing Address</h1>
-
-
-					<div class="panel-body">
 						<div class="text-center">
-							<p>${registerModel.billing.addressLineOne},</p>
-							<p>${registerModel.billing.addressLineTwo},</p>
-							<p>${registerModel.billing.city}-
-								${registerModel.billing.postalCode},</p>
-							<p>${registerModel.billing.state}</p>
-							<p>${registerModel.billing.country}</p>
-							<p>
+							<h3>
+								<strong>${registerModel.billing.addressLineOne},</strong>
+							</h3>
+							<h4>
+								<strong>${registerModel.billing.addressLineTwo},</strong>
+							</h4>
+							<h4>
+								<strong>${registerModel.billing.city}-
+									${registerModel.billing.postalCode},</strong>
+							</h4>
+							<h4>
+								<strong>${registerModel.billing.state}</strong>
+							</h4>
+							<h4>
+								<strong>${registerModel.billing.country}</strong>
+							</h4>
+							<h4>
 								<a href="${flowExecutionUrl}&_eventId_billing"
 									class="btn btn-primary">Edit</a>
-							</p>
+							</h4>
 						</div>
 					</div>
 
-			</div>
-		</div>
+				</div>
+				<div
+					class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+					<div class="text-center">
 
-	</div>
-
-	<div class="row">
-
-		<div class="col-sm-4 col-sm-offset-4">
-
-			<div class="text-center">
-
-				<a href="${flowExecutionUrl}&_eventId_submit"
-					class="btn btn-lg btn-primary">Confirm</a>
+						<a href="${flowExecutionUrl}&_eventId_submit"
+							class="btn btn-lg btn-primary">Confirm</a>
+					</div>
+				</div>
 
 			</div>
-
 		</div>
-
 	</div>
+</div>
 
-</div>
-</div>
+
 <%@include file="../flows-shared/footer.jsp"%>

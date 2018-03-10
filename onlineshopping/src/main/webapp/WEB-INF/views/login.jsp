@@ -45,49 +45,46 @@
 </head>
 
 <body>
-
-	<div class="wrapper" id="er">
-
-		<!-- Navigation -->
-		<%@include file="./shared/navbar.jsp"%>
-
-		<!-- Page Content -->
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			<div class="well">
-				<h1 class="text-center">Login</h1>
-				<div class="panel-body">
-					<form action="${contextRoot}/login" method="POST"
-						class="form-horizontal" id="loginForm">
-						<div class="form-group">
-							<label for="username" class="col-md-4 control-label">Email:
+	<!-- Navigation -->
+	<%@include file="./shared/navbar.jsp"%>
+	<div class="row">
+		<div
+			class="col-lg-8 col-lg-push-2 col-lg-pull-2 col-md-8 col-md-push-2 col-sm-6 col-sm-push-3 col-xs-12">
+			<div class="well" id="login">
+				<h1 class="text-center" id="loginheading">Login</h1>
+				<form action="${contextRoot}/login" method="POST"
+					class="form-horizontal" id="loginForm">
+					<div class="form-group">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 label-column">
+							<label class="control-label" for="username"><strong>Email:</strong>
 							</label>
-							<div class="col-md-8">
-								<input type="text" name="username" id="username"
-									class="form-control" />
-							</div>
 						</div>
-						<div class="form-group">
-							<label for="password" class="col-md-4 control-label">Password:
+						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 input-column">
+							<input type="email" name="username" id="username"
+								class="form-control" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 label-column">
+							<label class="control-label text-center" for="password"><strong>Password:</strong>
 							</label>
-							<div class="col-md-8">
-								<input type="password" name="password" id="password"
-									class="form-control" />
-							</div>
 						</div>
-						<div class="form-group">
-							<div class="col-md-offset-4 col-md-8">
-								<p class="text-center">
-									<input type="hidden" name="${_csrf.parameterName}"
-										value="${_csrf.token}" /> <input type="submit" value="Login"
-										class="btn btn-primary" />
-								</p>
-							</div>
+						<div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 input-column">
+							<input type="password" name="password" id="password"
+								class="form-control" />
 						</div>
-					</form>
-
-				</div>
-				<div class="panel-footer">
+					</div>
+					<div class="form-group">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<p class="text-center">
+								<input type="hidden" name="${_csrf.parameterName}"
+									value="${_csrf.token}" /> <input type="submit" value="Login"
+									class="btn btn-primary" />
+							</p>
+						</div>
+					</div>
+				</form>
+				<div class="panel-footer" id="loginpf">
 					<div class="text-right">
 						New User - <a href="${contextRoot}/membership">Register Here</a>
 					</div>
@@ -96,7 +93,6 @@
 		</div>
 		<div class="col-md-2"></div>
 	</div>
-
 	<!-- Footer comes here -->
 	<%@include file="./shared/footer.jsp"%>
 

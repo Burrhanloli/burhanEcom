@@ -108,7 +108,7 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: #db8888;
 	-webkit-transition: .4s;
 	transition: .4s;
 }
@@ -126,11 +126,11 @@ footer {
 }
 
 input:checked+.slider {
-	background-color: #2196F3;
+	background-color: #CD5C5C;
 }
 
 input:focus+.slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px #CD5C5C;
 }
 
 input:checked+.slider:before {
@@ -230,6 +230,81 @@ input:checked+.slider:before {
 	border-top: 2px solid;
 }
 
+@media only screen and (max-width: 760px) , ( min-device-width : 768px)
+	and (max-device-width: 1024px) {
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr {
+		border: 1px solid #ccc;
+	}
+	td {
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #CD5C5C;
+		position: relative;
+		padding-left: 50%;
+	}
+	td:after {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-left: 10px;
+		white-space: nowrap;
+	}
+
+	/*
+		Label the data
+		*/
+	* /
+	td:nth-of-type(1):before {
+		content: "";
+	}
+	td:nth-of-type(2):before {
+		content: "Name:-";
+	}
+	td:nth-of-type(3):before {
+		content: "Brand:-";
+	}
+	td:nth-of-type(4):before {
+		content: "Price:-";
+	}
+	td:nth-of-type(5):before {
+		content: "Quantity:-";
+	}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width
+	: 480px) {
+	body {
+		padding: 0;
+		margin: 0;
+		width: 320px;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width:
+	1024px) {
+	body {
+		width: 495px;
+	}
+}
+/*
+	Label the data
+
 /* landing css */
 .landingImg {
 	width: 180px;
@@ -287,10 +362,26 @@ input:checked+.slider:before {
 	color: #fff;
 	background: #292c2f;
 	border: 0;
-	box-shadow:3px 3px 3px rgba(0, 0, 0,0.5);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .custom-header ul.nav.navbar-nav li a:hover {
+	box-shadow: 3px 3px 3px #CD5C5C;
+}
+.custom-header ul.nav.navbar-nav.links li input {
+	padding-left:15px;
+	margin-right:15px;
+	font: 14px Arial, Helvetica, sans-serif;
+	height:47px;
+	width:300px;
+	text-decoration: none;
+	color: #fff;
+	background: #292c2f;
+	border: 0;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.custom-header ul.nav.navbar-nav li input:hover {
 	box-shadow: 3px 3px 3px #CD5C5C;
 }
 
@@ -307,6 +398,7 @@ input:checked+.slider:before {
 
 .custom-header li.dropdown, .custom-header li.dropdown.open {
 	background: #292c2f;
+	
 }
 
 .custom-header li.dropdown .dropdown-toggle {
@@ -317,6 +409,7 @@ input:checked+.slider:before {
 	opacity: 0.9;
 	border: 0;
 	margin: 0;
+	
 }
 
 .custom-header li.dropdown .dropdown-toggle:focus, .custom-header li.dropdown .dropdown-toggle:hover,
@@ -329,11 +422,7 @@ input:checked+.slider:before {
 	font: bold 13px Arial, Helvetica, sans-serif;
 }
 
-img.dropdown-image {
-	border-radius: 50%;
-	width: 32px;
-	margin-left: 10px;
-}
+
 
 .custom-header .dropdown ul {
 	background-color: #292c2f;
@@ -357,6 +446,7 @@ img.dropdown-image {
 .custom-header .dropdown ul li a:active, .custom-header .dropdown ul li a:focus,
 	.custom-header .dropdown ul li a:hover {
 	background: #292c2f;
+	
 }
 
 .custom-header .dropdown ul li.active a {
@@ -390,6 +480,10 @@ div #pr.well {
 table .table.table-hover {
 	overflow: auto;
 	text-align: center;
+	
+}
+.table.table-hover th{
+	border-bottom: 2px solid #CD5C5C;
 }
 
 .table.table-hover a {
@@ -401,7 +495,8 @@ table .table.table-hover {
 	box-shadow: 0px 3px 3px #ccc;
 }
 
-.btn-primary {
+.btn-primary
+{
 	background: #CD5C5C;
 	border: none;
 	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
@@ -427,6 +522,25 @@ table .table.table-hover {
 	background: #CD5C5C;
 }
 
+.btn-success,
+.btn-warning
+{
+	border: none;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+}
+
+.btn-success:hover,
+.btn-warning:hover{
+	box-shadow: 0px 3px 3px #ffffff;
+}
+.form-group.btn.btn-primary{
+	background: #CD5C5C;
+	border: none;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+}
+}
 div .jumbotron, .h1, .blockquote {
 	background: #ffffff;
 }
@@ -447,5 +561,5 @@ h1 {
 
 .panel-footer {
 	background: #ffffff;
-	border-top: 2px solid c;
+	border-top: 2px solid #CD5C5C;
 }

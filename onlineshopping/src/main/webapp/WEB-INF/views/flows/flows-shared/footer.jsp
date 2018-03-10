@@ -1,32 +1,59 @@
-		<div>
-
-
-		<!-- Footer comes here -->
-		<%@include file="../../shared/footer.jsp"%>
-
-		<!-- jQuery -->
-		<script src="${js}/jquery.js"></script>
-
-		<script src="${js}/jquery.validate.js"></script>
-
-		<!-- Bootstrap Core JavaScript -->
-		<script src="${js}/bootstrap.min.js"></script>
-		
-		<!-- DataTable Plugin -->
-		<script src="${js}/jquery.dataTables.js"></script>
-		
-		<!-- DataTable Bootstrap Script -->
-		<script src="${js}/dataTables.bootstrap.js"></script>
-		
-		<!-- DataTable Bootstrap Script -->
-		<script src="${js}/bootbox.min.js"></script>
-		
-		
-		<!-- Self coded javascript -->
-		<script src="${js}/myapp.js"></script>
-
+<footer class="hidden-xs">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 footer-navigation">
+			<h3>
+				<a href="#"><strong>Eternal</strong> Clothing</a>
+			</h3>
+			<p class="company-name">Eternal Cothing © 2015</p>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 footer-contacts">
+			<div>
+				<span class="fa fa-map-marker footer-contacts-icon"> </span>
+				<p>
+					<span class="new-line-span">21 Revolution Street</span> Paris,
+					France
+				</p>
+			</div>
+			<div>
+				<i class="fa fa-phone footer-contacts-icon"></i>
+				<p class="footer-center-info email text-left">+1 555 123456</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope footer-contacts-icon"></i>
+				<p>
+					<a href="#" target="_blank">support@company.com</a>
+				</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 footer-about">
+			<h4>About the company</h4>
+			<div class="social-links social-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
+					class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a
+					href="#"><i class="fa fa-github"></i></a>
+			</div>
+		</div>
 	</div>
+</footer>
 
-</body>
+<!-- jQuery -->
+<script src="${js}/jquery.js"></script>
 
-</html>
+<script src="${js}/jquery.validate.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="${js}/bootstrap.min.js"></script>
+
+<!-- DataTable Plugin -->
+<script src="${js}/jquery.dataTables.js"></script>
+
+<!-- DataTable Bootstrap Script -->
+<script src="${js}/dataTables.bootstrap.js"></script>
+
+<!-- DataTable Bootstrap Script -->
+<script src="${js}/bootbox.min.js"></script>
+
+
+<!-- Self coded javascript -->
+<script src="${js}/myapp.js"></script>
+

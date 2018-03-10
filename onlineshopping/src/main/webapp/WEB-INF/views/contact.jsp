@@ -1,9 +1,9 @@
-<div class="row" id="rr">
+<div class="row">
+	<div
+		class="col-lg-10 col-lg-push-1 col-lg-pull-2 col-md-10 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-12">
+		<div class="well" id="login">
 
-	<div class="col-md-12">
-		<div class="well">
-
-			<h1>Contact Us</h1>
+			<h2 class="text-left" id="about">Contact Us</h2>
 			<p>This is an contact us page</p>
 		</div>
 	</div>

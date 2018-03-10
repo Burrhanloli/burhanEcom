@@ -4,7 +4,7 @@ footer{
   box-sizing:border-box;
   width:100%;
   text-align:left;
-  font:bold 16px sans-serif;
+  font:bold 13px sans-serif;
   padding:55px 50px;
   margin-top:80px;
   bottom:0;
@@ -24,7 +24,7 @@ footer{
 }
 
 .footer-navigation h3 span{
-  color:#bc40df;
+  color:#5383d3;
 }
 
 .footer-navigation p.links a{

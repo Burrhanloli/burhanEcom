@@ -3,50 +3,42 @@
 <script>
 	window.userRole = '${userModel.role}';
 </script>
-<nav class="navbar navbar-default custom-header navbar-fixed-top"
-	role="navigation">
+<nav class="navbar navbar-default">
 	<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">
-			<a class="navbar-brand navbar-link" href="${contextRoot}/home">Eternal
-				<span>Clothing </span>
-			</a>
+			<a class="navbar-brand navbar-link" href="${contextRoot}" id="brand"><strong>Eternal</strong>
+				Clothing</a>
 			<button class="navbar-toggle collapsed" data-toggle="collapse"
-				data-target="#navbar-collapse">
+				data-target="#navcol-1">
 				<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
 					class="icon-bar"></span><span class="icon-bar"></span>
 			</button>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="navbar-collapse">
-			<ul class="nav navbar-nav links">
+		<div class="collapse navbar-collapse" id="navcol-1">
+			<ul class="nav navbar-nav">
 				<li role="presentation" id="about"><a
-					href="${contextRoot}/about">About</a></li>
-
+					href="${contextRoot}/about"><strong>About</strong></a></li>
 				<li role="presentation" id="contact"><a
-					href="${contextRoot}/contact">Contact</a></li>
+					href="${contextRoot}/contact"><strong>Contact</strong></a></li>
 				<li role="presentation" id="listProducts"><a
-					href="${contextRoot}/show/all/products">View Products</a></li>
-
-
-				<security:authorize access="hasAuthority('ADMIN')">
-					<li role="presentation" id="manageProduct"><a
-						href="${contextRoot}/manage/product">Manage Product</a></li>
-				</security:authorize>
+					href="${contextRoot}/show/all/products"><strong>View
+							Products</strong></a></li>
 			</ul>
 
-			<ul class="nav navbar-nav links navbar-right">
+			<ul class="nav navbar-nav navbar-right">
 				<security:authorize access="isAnonymous()">
 					<li role="presentation" id="signup"><a
-						href="${contextRoot}/membership">Sign Up</a></li>
+						href="${contextRoot}/membership"><strong>Sign Up</strong></a></li>
 					<li role="presentation" id="login"><a
-						href="${contextRoot}/login">Login</a></li>
+						href="${contextRoot}/login"><strong>Login</strong></a></li>
 				</security:authorize>
 				<security:authorize access="isAuthenticated()">
-					<li class="dropdown" id="userModel"><a class="dropdown-toggle"
-						href="javascript:void(0)" id="dropdownMenu1"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							${userModel.fullName} <span class="caret"></span>
+					<li class="presentation dropdown text-uppercase" id="userModel"><a
+						class="dropdown-toggle" href="javascript:void(0)"
+						id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true"> <strong>${userModel.fullName} <span
+								class="caret"></span></strong>
 					</a>
 						<ul class="dropdown-menu dropdown-menu-right" role="menu"
 							aria-labelledby="dropdownMenu1">
@@ -58,15 +50,14 @@
 										${userModel.cart.grandTotal}
 								</a></li>
 							</security:authorize>
-							<li role="presentation" class="active" id="logout"><a
-								href="${contextRoot}/logout">Logout</a></li>
+							<security:authorize access="hasAuthority('ADMIN')">
+								<li role="presentation" id="manageProduct"><a
+									href="${contextRoot}/manage/product"><strong>Admin</strong></a></li>
+							</security:authorize>
+							<li role="presentation" id="logout"><a
+								href="${contextRoot}/logout"><strong>Logout</strong></a></li>
 						</ul></li>
 				</security:authorize>
-			</ul>
-			<ul class="text-center nav navbar-nav links navbar-right">
-				<li role="presentation"><input id="search" type="search"
-					name="search" class="form-control"
-					placeholder="Search for Products, Brands, and more" /></li>
 			</ul>
 		</div>
 		<!-- /.navbar-collapse -->

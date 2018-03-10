@@ -33,7 +33,7 @@
 								<td data-th="Product">
 									<div class="row">
 										<div class="col-sm-2 hidden-xs">
-											<img src="${images}/${cartLine.product.name}.jpg"
+											<img src="${images}/${cartLine.product.code}.jpg"
 												alt="${cartLine.product.name}"
 												class="img-responsive dataTableImg" />
 										</div>
